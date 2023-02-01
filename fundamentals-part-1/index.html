@@ -7,16 +7,37 @@
 <body>
   <script>
     // Your JavaScript goes here!
-	let a = 10;
-	let b = a * 7;
-	const max = 57;
-	let actual = max - 13;
-	let percent = actual / max;
-	let p = percent.toFixed(4);
+	function add7(number)
+	{
+		let b = number;
+		let a = 7;
+		return (a + b);
+	}
+	console.log(add7(7));
 
-	console.log(p*100 +'%')
-    console.log(a * 9);
-	console.log(b);
+	function multiply(x, y)
+	{
+		let result = x*y;
+		return (result);
+	}
+	console.log(multiply(10, 5));
+
+	function capitalize(string)
+	{
+		let capy = string.toLowerCase();
+		let final = capy.charAt(0).toUpperCase() + capy.slice(1);
+		return(final);
+	}
+	console.log(capitalize("OLA"));
+
+	function lastLetter(string)
+	{
+		let i = 0;
+		while (string[i])
+			i++;
+		return(string.charAt(i - 1));
+	}
+	console.log(lastLetter("abcd"));
   </script>
 </body>
 </html>
