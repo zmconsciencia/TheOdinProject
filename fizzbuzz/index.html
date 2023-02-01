@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+
+	let answer = parseInt(prompt("Enter a number: "))
+
+	function fizzbuzz(cap)
+	{
+		let i = 0;
+		let fizz = "fizz";
+		let buzz = "buzz";
+		let fizzbuzz = "fizzbuzz";
+
+		while (++i <= cap)
+		{
+			if (i % 3 === 0 && i % 5 === 0)
+				console.log(fizzbuzz);
+			else if (i % 3 === 0)
+				console.log(fizz);
+			else if (i % 5 === 0)
+				console.log(buzz);
+			else
+				console.log(i)
+		}
+	}
+	console.log(fizzbuzz(answer));
+  </script>
+</body>
+</html>
